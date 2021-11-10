@@ -4,7 +4,7 @@ Learning and Classifying Vaccine Hesitancy
 
 **Abstract:**
 
- the World Health Organization reported vaccine hesitancy as one of the ten leading threats to global health. One-fifth of Americans report that they are hesitant against getting vaccinated or/and doubt vaccine safety. Thus, I looked at which individuals would be likely to hesitate against getting vaccines in this project. The project used the data, "the National 2009 H1N1 Flu Survey Data", which were collected in 2009 and 2010 to monitor influenza immunization coverage for random American households. I built different classification models and compared them to select a model that performed the best to predict the true positive cases (i.e., individuals who were vaccinated for H1N1). Naive Bayes outperformed the other models in the project. With the validation dataset, the score on recall was 0.54. With the holdout (test) dataset, the recall score was 0.51. Future studies should perform more advanced feature engineering such as testing on a different set of features. 
+ the World Health Organization reported vaccine hesitancy as one of the ten leading threats to global health. One-fifth of Americans report that they are hesitant against getting vaccinated or/and doubt vaccine safety. Thus, I looked at which individuals would be likely to hesitate against getting vaccines in this project. The project used the data, "the National 2009 H1N1 Flu Survey Data", which were collected in 2009 and 2010 to monitor influenza immunization coverage for random American households. I built different classification models and compared them to select a model that performed the best to predict the true positive cases (i.e., individuals who were vaccinated for H1N1). Random Forest outperformed the other models (i.e., Logistic Regression, Naive Bayes, and XGBoost) in the project. With the validation dataset, the score on recall was 0.745. With the holdout (test) dataset, the recall score was 0.701. Future studies can perform more advanced feature engineering, such as testing on a different set of features, and test other possible emsembling models. 
 
 
 
@@ -32,7 +32,7 @@ A. Feature Engineering
 
 B. Models
 
-The dataset was split into 60/20/20 (train, validation, test). The following models were compared for scores to see which model performed the best: Logistic regression, Naive Bayes, Random Forest with GridCV, and XGBoost with GridCV. The evaluation metrics I used in the project was recall to predict true positive the best by penalizing false negatives. Naive Bayes outperformed the other models in the project. With the validation dataset, the score on recall was 0.54. With the holdout (test) dataset, the recall score was 0.51.
+The dataset was split into 60/20/20 (train, validation, test). The following models were compared for scores to see which model performed the best: Logistic regression, Naive Bayes, Random Forest with GridCV, and XGBoost with GridCV. The evaluation metrics I used in the project was recall to predict true positive the best by penalizing false negatives. Random Forest outperformed the other models (i.e., Logistic Regression, Naive Bayes, and XGBoost) in the project. With the validation dataset, the score on recall was 0.745. With the holdout (test) dataset, the recall score was 0.701.
 
 
 
